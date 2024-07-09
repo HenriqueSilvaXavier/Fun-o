@@ -1,7 +1,7 @@
 x=int(input("Digite o valor de x: "))
 f=input("Digite a função f(x): ")
 if "!" not in f:
-	y=eval(f.replace("x", x))
+	y=eval(f.replace("x", str(x)))
 if "!" in f:
 	f2=f
 	while "!" in f2:
